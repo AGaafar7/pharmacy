@@ -1,0 +1,20 @@
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.Button?>
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.agaafar.pharmacy.controllers.InventoryController" prefWidth="600" prefHeight="400">
+    <children>
+        <Label layoutX="260" layoutY="10" text="Inventory"/>
+        <TableView fx:id="stockTable" layoutX="50" layoutY="50" prefWidth="500" prefHeight="250">
+            <columns>
+                <TableColumn fx:id="batchIdColumn" text="Batch ID"/>
+                <TableColumn fx:id="medicineNameColumn" text="Medicine Name"/>
+                <TableColumn fx:id="quantityColumn" text="Quantity"/>
+                <TableColumn fx:id="expirationColumn" text="Expiration"/>
+            </columns>
+        </TableView>
+        <Button layoutX="50" layoutY="320" text="Add Stock" onAction="#onAddStockClicked"/>
+        <Button layoutX="150" layoutY="320" text="Update Quantity" onAction="#onUpdateQuantityClicked"/>
+    </children>
+</AnchorPane>

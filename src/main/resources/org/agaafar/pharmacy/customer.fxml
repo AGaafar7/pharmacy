@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.agaafar.pharmacy.controllers.CustomerController">
+    <top>
+        <ToolBar>
+            <Button text="Add Customer" onAction="#onAddCustomer"/>
+            <Button text="Update Customer" onAction="#onUpdateCustomer"/>
+            <Button text="Delete Customer" onAction="#onDeleteCustomer"/>
+        </ToolBar>
+    </top>
+
+    <center>
+        <TableView fx:id="customerTable" prefHeight="400" prefWidth="600">
+            <columns>
+                <TableColumn fx:id="idColumn" text="ID" prefWidth="80"/>
+                <TableColumn fx:id="nameColumn" text="Name" prefWidth="200"/>
+                <TableColumn fx:id="phoneColumn" text="Phone" prefWidth="200"/>
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>
