@@ -1,6 +1,8 @@
 package org.agaafar.pharmacy.database.models;
 
-public class Medicine {
+import org.agaafar.pharmacy.Product;
+
+public class Medicine implements Product {
 
     private int id;
     private String name;
